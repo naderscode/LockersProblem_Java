@@ -20,6 +20,7 @@ public class LockersV1
 	{
 		int numLockers;  //total number of lockers
 		System.out.print("Enter the number of Lockers: ");// prompt the user to enter required number of lockers
+        
 		System.out.flush();     // flush the buffer
 		numLockers = input.nextInt();  // get user input of number of lockers.
 		
@@ -42,9 +43,8 @@ public class LockersV1
 			}// end nested for	
 			
 			
-
-			if(divisors % 2 !=0)    // check to see if the divisors for that locker number are odd, because if they
-										// are odd, the locker will remain open.
+            /* check to see if the divisors for that locker number are odd, because if they are odd, the locker will remain open.*/
+			if(divisors % 2 !=0) 
 			{
 					openLockers++;  // keep track of the count of open lockers (that have an odd number of divisors)
 					System.out.print(locker + " ");  // print the open locker number followed by a space.

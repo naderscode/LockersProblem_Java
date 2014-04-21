@@ -26,10 +26,8 @@ public class LockersV2
 	
 			//create an array of lockers with a state of true (open) or false (closed)
 			boolean[]lockers= new boolean[input+1]; 
-				int numLockers = lockers.length; // store the length of array into numLockers   variable to be used .
-															//in the code it is more memory efficient to store it in a variable
-															// to be reused vs. checking for array length each time.
-			
+				int numLockers = lockers.length; /* store the length of array into numLockers   variable to be used in the code it is more memory efficient to store it in a variable to be reused vs. checking for array length each time.*/
+        
 			//These nested loops simulates the actions of each student as they go through the respective lockers toggling their state  	
 			for (int student = 1; student <= numLockers ; student++)
 			{

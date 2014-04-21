@@ -31,11 +31,9 @@ public class LockersV3
 		System.out.flush();     
 		lockers = input.nextInt();  // get user input and store it in variable "lockers"
 		int open = 0;					//declare and initialize variable "open" to zero.	
-		open = (int) Math.floor(Math.sqrt(lockers)); //calculate the square root of the number of lockers,
-																	//	to get the numberof perfect square below it, and hence
-																	// get the number of open lockers.
+		open = (int) Math.floor(Math.sqrt(lockers)); /*calculate the square root of the number of lockers, to get the numberof perfect square below it, and hence get the number of open lockers.*/
 		
-		//print the open lockers, which are the perfect squares up to the square root of the number of lockers
+		/*print the open lockers, which are the perfect squares up to the square root of the number of lockers*/
 		System.out.println();		
 		System.out.println("The open lockers are: ");
 		for(int i=1; i<=open; i++)

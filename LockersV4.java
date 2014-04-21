@@ -7,8 +7,8 @@
 			  This program outputs the count of lockers that rremain open after the game is over,
 			  and also outputs a list of all the lockers that are open.
 
-
 */
+
 import java.util.*;
 
 public class LockersV4
@@ -28,12 +28,14 @@ public class LockersV4
 		
 		System.out.println();		
 		System.out.println("The open lockers are: ");
+        
 		for(int i=1; i<=open; i++)
 		{
 			openLockers = i*i;
 			System.out.print(openLockers + ", ");	
 		
 		}
+        
 		System.out.println();	
 		System.out.println("There are " + open + " open lockers.");	
 			
